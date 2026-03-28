@@ -1,52 +1,62 @@
-# 🔐 Simple Security Scanner
+# 🔐 Basit Port Tarayıcı
 
-A lightweight Python-based port scanner designed for basic security analysis and learning purposes.
+Bu proje, Python kullanarak yazdığım basit bir port tarama aracıdır.
+Amacım hem siber güvenliğe giriş yapmak hem de ağ (network) mantığını daha iyi anlamaktı.
 
-## 🚀 Features
+## 🚀 Ne İşe Yarar?
 
-* Fast port scanning
-* Detection of common open ports
-* Basic security warnings for risky services
-* Beginner-friendly code structure
+Bu araç sayesinde bir IP adresinde hangi portların açık olduğunu görebilirsiniz.
+Ayrıca bazı portlar için basit güvenlik uyarıları da verir.
 
-## 📌 How It Works
+Örnek:
 
-The script scans a target IP address and checks for open ports using TCP connections.
-If a port is open, it is reported along with potential security risks.
+* 21 → FTP (güvensiz olabilir)
+* 23 → Telnet (şifrelenmemiş)
+* 3389 → RDP (uzaktan erişim)
 
-## ⚙️ Installation
+## ⚙️ Nasıl Çalışır?
 
-Make sure you have Python installed (3.x recommended).
+Program, belirlediğim bazı yaygın portlara sırayla bağlanmayı dener.
+Eğer bağlantı kurulursa o portun açık olduğunu anlar.
 
-Clone the repository:
+Mantık tamamen şu:
 
-```bash
-git clone https://github.com/enesdemir027/siber-exploit
-cd siber
+> "Bağlanabiliyorsam port açıktır"
+
+## ▶️ Nasıl Kullanılır?
+
+1. Python kurulu olmalı (Python 3 önerilir)
+2. Dosyayı indir
+3. Terminalden çalıştır:
+
+```bash id="run1"
+python scan.py
 ```
 
-## ▶️ Usage
+4. IP adresini gir ve sonucu bekle
 
-Run the script:
+## ⚠️ Uyarı
 
-```bash
-python scanner.py
-```
+Bu proje sadece eğitim amaçlıdır.
+Lütfen izinsiz sistemlerde kullanmayın.
 
-Enter the target IP address when prompted.
+## 🧠 Neden Yazdım?
 
-## ⚠️ Disclaimer
+Siber güvenliğe yeni başladım ve teoriden ziyade pratik yapmak istedim.
+Bu yüzden basit ama işe yarar bir şey yapmak istedim.
 
-This tool is created for educational purposes only.
-Do not use it on networks or systems without proper authorization.
+## 🔧 Geliştirme Fikirleri
 
-## 🧠 Future Improvements
+İleride şunları eklemeyi düşünüyorum:
 
-* Service detection (banner grabbing)
-* GUI interface
-* Multi-threaded scanning for speed
-* Vulnerability detection
+* Daha hızlı tarama (multi-thread)
+* Servis bilgisi çekme
+* Basit arayüz (GUI)
+* Daha fazla port desteği
 
-## 👨‍💻 Author
+## 👨‍💻 Not
 
-Developed by Enes Demir.
+Kod olabildiğince sade yazıldı.
+Yeni başlayan biri bile okuyup anlayabilir.
+
+Geliştirmek isteyen olursa PR atabilir 👍
