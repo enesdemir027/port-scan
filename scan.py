@@ -1,6 +1,5 @@
 import socket
 
-# Yaygın kullanılan portlar
 ports = {
     21: "FTP",
     22: "SSH",
@@ -11,7 +10,6 @@ ports = {
     3389: "RDP"
 }
 
-# Riskli olabilecek portlar
 risky = {
     21: "FTP genelde güvensiz olabilir",
     23: "Telnet şifreleme kullanmaz",
