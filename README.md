@@ -21,8 +21,8 @@ Make sure you have Python installed (3.x recommended).
 Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/simple-security-scanner.git
-cd simple-security-scanner
+git clone https://github.com/enesdemir027/siber-exploit
+cd siber
 ```
 
 ## ▶️ Usage
